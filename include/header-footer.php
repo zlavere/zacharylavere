@@ -1,7 +1,7 @@
 <?php
 function libs() {
     echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">' .
-        '<link rel="stylesheet" href="../css/style.css" />'.
+        '<link rel="stylesheet" href="./css/styles.css" />'.
         '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>'.
         '<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>'.
         '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>';
@@ -13,13 +13,15 @@ function start() {
     echo libs();
     echo '<body>' .
         '<header>' .
-        '<div class="container page-header">' .
-        '<h1 class="primary">Zachary LaVere</h1> ' .
-        '</div>' .
-        '<div class="container"><nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="nav-item nav-link" href="http://zacharylavere.com">Home</a>
+        '<div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="http://zacharylavere.com">Zachary LaVere</a>
+                <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="https://github.com/zlavere"">GitHub</a>
-          </nav>
+                </div>
+            </div>
+                
+            </nav>
           </div>' .
         '</header>';
 }
